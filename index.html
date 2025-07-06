@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/ti-rex.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/global/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project Manager</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/images/logo.png" alt="logo da página" />
+          <h1>Project Manager</h1>
+        </a>
+      </div>
+      <div class="div-login">
+        <button class="btn-login" onclick="window.location.href='login.html'">
+          Login
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="main-content">
+          <h2>
+            Welcome to <span class="main-highlight">Project Manager</span>
+          </h2>
+          <p>
+            Get your projects and ideas in order, all in one place! Sign up now
+            and discover a smarter way to manage your work with efficiency and
+            teamwork.
+          </p>
+          <button class="cta-btn" onclick="window.location.href='login.html'">
+            Get Started
+          </button>
+        </div>
+        <div class="main-image">
+          <img
+            src="assets/images/image-banner.png"
+            alt="Imagem de uma mulher com aplicativos de gerenciamento de projetos"
+          />
+        </div>
+      </section>
+
+      <section class="section-manager">
+        <h2>The Manager</h2>
+        <p>
+          Project Manager is a tool designed to make organizing and tracking
+          your daily tasks easier than ever. With a clean, intuitive interface
+          and powerful features, you can plan, prioritize, and keep tabs on your
+          projects - whether you’re working solo or a with a team
+        </p>
+        <button class="learn-more-btn">Learn More</button>
+        <div class="project-features">
+          <article>
+            <img
+              src="assets/images/image-container1.png"
+              alt="Imagem de um quadro branco com post-its"
+            />
+            <p>Manage Projects</p>
+            <h3>20+ projects</h3>
+          </article>
+          <article>
+            <img
+              src="assets/images/image-container2.png"
+              alt="Imagem ilustrativa representando a trilha de tarefas"
+            />
+            <p>Track Tasks</p>
+            <h3>50+ tasks</h3>
+          </article>
+          <article>
+            <img
+              src="assets/images/image-container3.png"
+              alt="Imagem de várias pessoas sentadas ao redor da mesa trabalhando juntas"
+            />
+            <p>Collaborate</p>
+            <h3>10+ team members</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-tools">
+        <h1>Feature Tools</h1>
+        <p>Tools to enhance your project management</p>
+        <button class="view-all-btn">View All</button>
+        <div class="tools">
+          <div class="tool">
+            <img
+              src="./assets/images/task_scheduler_icon.png"
+              alt="Ícone de um Agendador de Tarefas"
+            />
+            <h2>Task Scheduler</h2>
+            <p>Plan and schedule tasks</p>
+          </div>
+          <div class="tool">
+            <img
+              src="./assets/images/deadline_tracker_icon.png"
+              alt="Ícone de Rastreador de Prazos"
+            />
+            <h2>Deadline Tracker</h2>
+            <p>Keep track of project deadlines</p>
+          </div>
+          <div class="tool">
+            <img
+              src="./assets/images/communication_hub_icon.png"
+              alt="Ícone de um Centro de Comunicações"
+            />
+            <h2>Communication Hub</h2>
+            <p>Centralized team communication</p>
+          </div>
+          <div class="tool">
+            <img
+              src="./assets/images/progress_report_icon.png"
+              alt="Ícone de um Relatório de Progresso"
+            />
+            <h2>Progress Report</h2>
+            <p>Track project progress</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="subscribe-title">
+          <h2>Subscribe to Updates</h2>
+          <p>Stay informed with our latest updates</p>
+        </div>
+        <form id="subscribeForm">
+          <div class="subscribe-input">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+              autocomplete="off"
+              onkeyup="clearErrorMessage()"
+            />
+            <span class="error-message" id="emailError"></span>
+            <small>We promise not to spam</small>
+          </div>
+          <div class="subscribe-input">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+              autocomplete="off"
+              onkeyup="clearErrorMessage()"
+            />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <footer>
+        <div class="footer-icons">
+          <a href="https://facebook.com/" target="_blank">
+            <img src="assets/svg/facebook.svg" alt="icone facebook" />
+          </a>
+          <a href="https://www.instagram.com/emersaann//" target="_blank">
+            <img src="assets/svg/instagran.svg" alt="ícone instagran" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emerson-penelli/"
+            target="_blank"
+          >
+            <img src="assets/svg/linkedin.svg" alt="ícone linkedin" />
+          </a>
+        </div>
+        <a href="#">© 2024 Project Manager. All rights reserved.</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </footer>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

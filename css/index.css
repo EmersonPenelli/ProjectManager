@@ -1,0 +1,323 @@
+@import url(global/variables.css);
+
+/* Header Section */
+
+.main {
+  background-color: var(--color-tertiary);
+  height: 496px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: 24px;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.main-content h2 {
+  font-size: 2.5rem;
+}
+
+.main-highlight {
+  color: var(--color-info);
+}
+
+.main-content p {
+  padding: 0 8%;
+}
+
+.main-content button {
+  background-color: var(--color-secondary);
+  color: var(--color-info);
+  width: 50%;
+  height: 48px;
+  margin: auto;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-content button:hover {
+  filter: brightness(1.1);
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Manager Section*/
+
+.section-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 60px 7%;
+  text-align: start;
+}
+
+.section-manager h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-manager button {
+  width: 100%;
+  max-width: 240px;
+  height: 48px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.section-manager button:hover,
+.learn-more-btn:hover,
+.subscribe button:hover {
+  filter: brightness(1.1);
+  background-color: #331446;
+}
+
+.section-manager .project-features {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.section-manager image {
+  width: 340px;
+}
+
+/* Feature Tools Section */
+
+.featured-tools {
+  background-color: color-mix(in srgb, var(--color-info) 50%, transparent 50%);
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+.featured-tools h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.featured-tools p {
+  font-size: 1.2em;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+}
+
+.view-all-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  width: 240px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.view-all-btn:hover {
+  filter: brightness(1.1);
+  background-color: #331446;
+
+  /* background-color: var(--color-primary); */
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin-top: 60px; */
+
+  padding-bottom: 60px;
+}
+
+.tool {
+  width: 245px;
+  height: 204px;
+  text-align: center;
+}
+
+.tool .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tool h2 {
+  font-size: 20px;
+  margin: 20px 0 8px 0;
+  color: var(--color-primary);
+}
+
+.tool p {
+  font-size: 1em;
+  color: var(--color-primary);
+}
+
+/* Subscribe */
+
+.subscribe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 388px;
+}
+
+.subscribe-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 146px 60px 146px 170px;
+  gap: 24px;
+  color: var(--color-primary);
+}
+
+.subscribe-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subscribe form {
+  display: flex;
+  color: var(--color-primary);
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 170px 60px 0;
+
+}
+
+.subscribe-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subscribe-input small {
+  color: #00000050;
+}
+
+.subscribe-input input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #00000030;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+
+.subscribe button {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 8px;
+  width: 240px;
+  height: 48px;
+  cursor: pointer;
+}
+
+/* Error Message */
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 4px;
+  display: block;
+  height: 5px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .main-content {
+    padding-bottom: 0px;
+  }
+
+  .main-image img {
+    width: 100%;
+  }
+
+  .section-manager {
+    padding: 20px 7%;
+    align-items: center;
+  }
+
+  .section-manager>p {
+    padding-left: 7%;
+  }
+
+  .features-tools {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    height: fit-content;
+    align-items: center;
+  }
+
+  article {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  .featured-tools {
+    padding-top: 10px;
+    height: fit-content;
+  }
+
+  .tools {
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+
+  .subscribe {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .subscribe h2 {
+    font-size: 2rem;
+  }
+
+  .subscribe form {
+    margin: auto;
+    padding: 0;
+  }
+
+  .subscribe-title {
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .subscribe-title>p {
+    margin-bottom: 20px;
+  }
+}
