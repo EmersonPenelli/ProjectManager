@@ -1,6 +1,6 @@
 ![Status projeto](https://img.shields.io/badge/STATUS-Finalizado-blue?style=for-the-badge)
 
-# Desafio_1_Semana_4_TI_Rex
+# Atividade MAPA - Dsiciplina Programação Frontend
 
 ## 📌 Sobre
 
