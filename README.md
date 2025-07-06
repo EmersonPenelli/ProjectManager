@@ -1,6 +1,6 @@
 ![Status projeto](https://img.shields.io/badge/STATUS-Finalizado-blue?style=for-the-badge)
 
-# Atividade MAPA - Dsiciplina Programação Frontend
+# Atividade MAPA - Disciplina Programação Frontend
 
 ## 📌 Sobre
 
