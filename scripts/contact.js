@@ -1,42 +1,37 @@
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  const nome = document.getElementById("nome");
-  const email = document.getElementById("email");
-  const mensagem = document.getElementById("mensagem");
 
-  let hasError = false;
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
 
-  // Nome
-  if (nome.value.trim().length < 3) {
-    document.getElementById("nomeError").innerText =
-      "Nome deve ter pelo menos 3 caracteres.";
-    hasError = true;
-  } else {
-    document.getElementById("nomeError").innerText = "";
+  let nameError = document.getElementById("nameError");
+  let emailError = document.getElementById("emailError");
+  let messageError = document.getElementById("messageError");
+
+  nameError.textContent = "";
+  emailError.textContent = "";
+  messageError.textContent = "";
+
+  let isValid = true;
+
+  if (name.length < 2) {
+    nameError.textContent = "Name must be at least 2 characters";
+    isValid = false;
   }
 
-  // Email
-  const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!regexEmail.test(email.value.trim())) {
-    document.getElementById("emailError").innerText = "Email inválido.";
-    hasError = true;
-  } else {
-    document.getElementById("emailError").innerText = "";
+  if (!/\S+@\S+\.\S+/.test(email)) {
+    emailError.textContent = "Enter a valid email address";
+    isValid = false;
   }
 
-  // Mensagem
-  if (mensagem.value.trim().length < 10) {
-    document.getElementById("mensagemError").innerText =
-      "Mensagem muito curta.";
-    hasError = true;
-  } else {
-    document.getElementById("mensagemError").innerText = "";
+  if (message.length < 10) {
+    messageError.textContent = "Message must be at least 10 characters";
+    isValid = false;
   }
 
-  if (!hasError) {
-    alert("Mensagem enviada com sucesso!");
-    nome.value = "";
-    email.value = "";
-    mensagem.value = "";
+  if (isValid) {
+    alert("Message sent successfully!");
+    document.getElementById("contactForm").reset();
   }
 });
