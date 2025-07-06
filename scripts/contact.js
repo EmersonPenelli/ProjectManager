@@ -31,7 +31,17 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   }
 
   if (isValid) {
-    alert("Message sent successfully!");
+    showToast("Message sent successfully!");
     document.getElementById("contactForm").reset();
   }
 });
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
