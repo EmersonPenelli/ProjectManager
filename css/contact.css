@@ -1,0 +1,70 @@
+@import url(global/variables.css);
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-form-section {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00000020;
+  color: var(--color-primary);
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.contact-form-section p {
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  background-color: #331446;
+}
+
+.error-message {
+  font-size: 0.875em;
+  color: red;
+  height: 16px;
+  display: block;
+  margin-top: 4px;
+}
